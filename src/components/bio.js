@@ -31,7 +31,7 @@ function Bio() {
               }}
             />
             <p>
-              Written by <strong>{author}</strong> who lives in Istanbul developing things for fun and sharing.
+              Written by <strong>{author}</strong> who lives in Frankfurt developing things for fun and sharing.
               {` `}
               {/* <a href={`https://twitter.com/${social.twitter}`}>
                 You should follow him on Twitter

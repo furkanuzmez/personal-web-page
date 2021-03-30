@@ -21,7 +21,7 @@ class BlogIndex extends React.Component {
           title="All posts"
           keywords={[`blog`, `gatsby`, `javascript`, `react`]}
         />
-        <h1>Hi! I am Mutluhan. I am computer engineering student in ITU.</h1>
+        <h1>Hi! I am Furkan. I am software engineer in Frankfurt.</h1>
         <h2>I hope there is something to read for you in my blog.</h2>
 
         <h3>Posts</h3>

@@ -18,7 +18,7 @@ class Layout extends React.Component {
             className="TitleStyle"
             to={`/`}
           >
-            {"Mutluhan Üzmez"}
+            {"Furkan Üzmez"}
           </Link>
         </h2>
         <ul className="Navbar" style={{ paddingRight: rhythm(3 / 4) }}>

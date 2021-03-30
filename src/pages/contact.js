@@ -42,10 +42,10 @@ class Contact extends React.Component {
                     borderRadius: `50%`,
                   }}
                 />
-                <h1>Mutluhan ÜZMEZ</h1>
+                <h1>Furkan ÜZMEZ</h1>
               </div>
               <div>
-                <h3>mutluhanuzmez@gmail.com</h3>
+                <h3>uzmezfurkan@gmail.com</h3>
                 <p>You can send an email to me by form at the right!</p>
               </div>
             </div>
@@ -59,7 +59,7 @@ class Contact extends React.Component {
                 justifyContent: 'flex-start',
                 alignItems: 'flex-start',
                 marginBottom: rhythm(2.5),
-              }} action="https://formspree.io/mutluhanuzmez@gmail.com" method="POST">
+              }} action="https://formspree.io/uzmezfurkan@gmail.com" method="POST">
                 <input style={{
                   height: rhythm(1),
                   marginBottom: rhythm(1 / 8),

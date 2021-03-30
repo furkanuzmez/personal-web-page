@@ -1,12 +1,12 @@
 module.exports = {
-  pathPrefix: "/mutluhanuzmez.github.io",
+  pathPrefix: "/furkanuzmez.github.io",
   siteMetadata: {
-    title: `Mutluhan ÜZMEZ`,
-    author: `Mutluhan ÜZMEZ`,
+    title: `Furkan ÜZMEZ`,
+    author: `Furkan ÜZMEZ`,
     description: `A starter blog demonstrating what Gatsby can do.`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
     social: {
-      twitter: `mutluhanzmez`,
+      twitter: `furkanuzmez`,
     },
   },
   plugins: [
