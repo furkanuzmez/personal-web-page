@@ -1,15 +1,23 @@
+
+@import url('https://fonts.googleapis.com/css?family=Heebo:400,700|Open+Sans:400,700');
+
+
 body {
-	font-family: Gill Sans Extrabold, sans-serif;
+	font-family: "Montserrat";
 	width:100% !important;
 	height:100% !important;
-	color: #000;
-	background-image: url('https://freedesignfile.com/upload/2017/01/Light-blue-tech-background-vector-04.jpg');
+	color: #ffffff;
 	background-attachment: fixed;
-	background-color: white ;
+	background-color: #212121;
+	/* background-image: url("https://i.pinimg.com/originals/40/5e/d2/405ed24d3766cebed3eb8ad10a74a753.gif") ; */
 	background-size: 400% 400%;
 	/* -webkit-animation: Gradient 60s ease infinite;
 	-moz-animation: Gradient 60s ease infinite;
 	animation: Gradient 60s ease infinite; */
+}
+
+h1,h2, h3, h4, h5, p{
+	font-family: "Montserrat";
 }
 
 @-webkit-keyframes Gradient {
@@ -49,7 +57,8 @@ body {
 }
 
 .Header {
-    background-color: #FFF;
+	background-color: rgba(0,0,0,0) ;
+	color: #FFF;
 }
 
 .Navbar {
@@ -58,33 +67,179 @@ body {
 	overflow: hidden;
 	display: inline-block;
 	float: right;
+	
 
+}
+
+button{
+	font-size: 1em;
+	background: rgba(255,255,255,0.5);
+	color:white;
+	border-radius: 0.3rem;
+	padding: 0 0.5em;
+	margin-right: 0.5em;
+	line-height: 1.5em;
+	transition: all, var(--transition-time);
+}
+
+.active-color{
+	background: #c06600;
+	color:white;
 }
 
 .NavLi {
 	float: right;
 	margin: 2px;
-	border-bottom: 1px solid black;
+	/* border-bottom: 1px solid black; */
 }
 
 .NavLi a {
     display: block;
-    color: black;
+	color: #ffffff;
     text-align: center;
     padding: 14px 36px;
     text-decoration: none;
-    border-bottom: 1px solid black;
+    /* border-bottom: 1px solid black; */
 }
 
 .NavLi a:hover {
-	color: black;
-    border-bottom: 1px solid red;
+	color: white;
+    border-bottom: 1px solid #c06600;
 }
 
 .TitleStyle {
 	display: inline-block;
 	box-shadow: none;
+	font-size:xx-large;
 	text-decoration: none;
-	color: black;
+	color: white;
 	padding-left: 60px;
   }
+
+  * {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+  }
+  
+  *:focus {
+	outline: 0;
+  }
+  
+  html {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+  
+  
+  .entrance {
+	  align-items: center;
+	  display: flex;
+	  justify-content: center;
+	  overflow: hidden;
+	  position: relative;
+	  height: 50vh;
+	  width: 100%;
+  }
+  
+  section img {
+	  height: 100%;
+	  left: 0;
+	  object-fit: contain;
+	  position: absolute;
+	  top: 0;
+	  width: 100%;
+	  opacity: 0.8;
+  }
+  
+  section h3 {
+	  color: #ffffff;
+	  font-size: 6rem;
+	  position: relative;
+  }
+  
+  @media screen and (max-width: 990px) {
+	  section h3 {
+		  font-size: 4rem;
+	  }
+  }
+  
+  @media screen and (max-width: 768px) {
+	  section h3 {
+		  font-size: 3rem;
+	  }
+  }
+  
+  @media screen and (max-width: 550px) {
+	  section h3 {
+		  font-size: 2rem;
+	  }
+  }
+
+  hr{
+	  color:white;
+	  background-color: white;
+  }
+
+
+  .cards-wrapper {
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 4rem;
+	padding: 4rem;
+	margin: 0 auto;
+	width: max-content;
+  }
+
+  .okvir{
+	display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #212121;
+    overflow: hidden;
+    z-index: -100;
+}
+
+.okvir .skill{
+    position: relative;
+    display: flex;
+    width: 250px;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    /* background: linear-gradient(0deg, #1b1b1b, #222, #1b1b1b); */
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.okvir .skill:hover{
+    /* transform: translateY(-20px);
+    -webkit-transform: translateY(-20px);
+    -moz-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    -o-transform: translateY(-20px); */
+    /* box-shadow: 0 15px 35px rgba(0,0,0,.5); */
+}
+
+.okvir .skill::before{
+    content: '';
+    position: relative;
+    width: 55%;
+    height: 100%;
+    top: 0;
+    left: -62.5px;
+    background: #212121;
+    pointer-events: none;
+    z-index: 1;
+}

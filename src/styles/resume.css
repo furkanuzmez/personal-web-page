@@ -4,7 +4,7 @@
 
 
 .year{
-  color: black;
+  color: white;
   margin: 0;
 }
 /* The actual timeline (the vertical ruler) */
@@ -34,6 +34,8 @@
   width: 50%;
 }
 
+
+
 /* The circles on the timeline */
 .container::after {
   content: '';
@@ -42,7 +44,7 @@
   height: 25px;
   right: -17px;
   background-color: white;
-  border: 4px solid black;
+  border: 4px solid #212121;
   top: 15px;
   border-radius: 50%;
   z-index: 1;
@@ -95,17 +97,89 @@
   right: -13px;
 }
 
-/* The actual content */
+
+* {
+  box-sizing: border-box;
+}
+
+
+The actual content
 .content {
-  padding: 20px 30px;
-  background-color: white;
+
   position: relative;
   border-style: solid;
   border-radius: 10px;
   border-width : 1px;
   border-color: gray;
   box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
-  color: black;
+  transition: all, var(--transition-time);
+  position: relative;
+  overflow: hidden;
+
+}
+
+.content {
+  border-radius: 1em;
+  box-shadow: 0 0 5em -1em black;
+  transition: all, var(--transition-time);
+  overflow: hidden;
+  border: 5px solid #ccc;
+  text-decoration: none;
+  padding: 20px 30px;
+}
+
+.content:before {
+  background: #ddd;
+  width: 250%;
+  height: 250%;
+}
+
+.content:after {
+  background: white;
+  width: 200%;
+  height: 200%;
+}
+
+.content:hover {
+  color: var(--color);
+}
+
+.content:hover:before, .content:hover:after {
+  transform: scale(1);
+}
+
+.content:hover h2 {
+  color: var(--color);
+}
+
+.content:hover hr {
+  color: var(--color);
+}
+
+.content:hover {
+  transform: rotate(0);
+}
+
+.content:hover {
+  background: var(--color);
+}
+.content:before, .content:after {
+  content: '';
+  transform: scale(0);
+  transform-origin: top left;
+  border-radius: 50%;
+  position: absolute;
+  left: -50%;
+  top: -50%;
+  z-index: -5;
+  transition: all, var(--transition-time);
+  transition-timing-function: ease-in-out;
+}
+
+.content-grid-space .num {
+  font-size: 3em;
+  margin-bottom: 1.2rem;
+  margin-left: 1rem;
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */

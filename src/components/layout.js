@@ -18,7 +18,7 @@ class Layout extends React.Component {
             className="TitleStyle"
             to={`/`}
           >
-            {"Furkan Üzmez"}
+            {"<FurkanUzmez/>"}
           </Link>
         </h2>
         <ul className="Navbar" style={{ paddingRight: rhythm(3 / 4) }}>
@@ -43,16 +43,16 @@ class Layout extends React.Component {
           </li>
           <li className="NavLi">
             <Link
-              to={`/stack`}
+              to={`/snippet`}
             >
-              {"Stack"}
+              {"Snippets"}
             </Link>
           </li>
           <li className="NavLi">
             <Link
-              to={`/`}
+              to={`/project`}
             >
-              {"Blog"}
+              {"Projects"}
             </Link>
           </li>
 
@@ -62,7 +62,12 @@ class Layout extends React.Component {
 
     return (
       <div class="mainContainer">
-        <header>{header}</header>
+        <header style={{
+            marginLeft: `auto`,
+            marginRight: `auto`,
+            maxWidth: rhythm(48),
+            padding: `${rhythm(1, 5)} ${rhythm(3 / 4)}`
+          }}>{header}</header>
         <main
           style={{
             marginLeft: `auto`,

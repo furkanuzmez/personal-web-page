@@ -2,6 +2,7 @@
 title: Why I Am Starting A Blog?
 date: "2019-04-19T21:28:03+00:00"
 description: "Hi Everyone, In this post I will mention about why I am starting a blog. It will be my first blog post and I am hoping that you can find reasons for yourself to starting a blog."
+subjects: ["java","ruby","rasppery pi","arduino"]
 ---
 
 Hi Everyone, 

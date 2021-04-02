@@ -4,14 +4,14 @@ const { createFilePath } = require(`gatsby-source-filesystem`)
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
 
-  const blogPost = path.resolve(`./src/templates/blog-post/index.js`)
+  const projectPost = path.resolve(`./src/templates/blog-post/index.js`)
   return graphql(
     `
       {
-        blogPosts: allMarkdownRemark(
+        projectPosts: allMarkdownRemark(
           sort: { fields: [frontmatter___date], order: DESC }
           limit: 1000
-          filter: {fileAbsolutePath: {regex: "/(blog)/"}}
+          filter: {fileAbsolutePath: {regex: "/(project)/"}}
         ) {
           edges {
             node {
@@ -24,10 +24,10 @@ exports.createPages = ({ graphql, actions }) => {
             }
           }
         }
-        stackPosts: allMarkdownRemark(
+        snippetPosts: allMarkdownRemark(
           sort: { fields: [frontmatter___date], order: DESC }
           limit: 1000
-          filter: {fileAbsolutePath: {regex: "/(stack)/"}}
+          filter: {fileAbsolutePath: {regex: "/(snippet)/"}}
         ) {
           edges {
             node {
@@ -48,18 +48,18 @@ exports.createPages = ({ graphql, actions }) => {
     }
 
     console.log(result);
-    // Create blog posts pages.
-    const blogPosts = result.data.blogPosts.edges
-    // Create stack posts pages.
-    const stackPosts = result.data.stackPosts.edges
+    // Create project posts pages.
+    const projectPosts = result.data.projectPosts.edges
+    // Create snippet posts pages.
+    const snippetPosts = result.data.snippetPosts.edges
 
-    blogPosts.forEach((post, index) => {
-      const previous = index === blogPosts.length - 1 ? null : blogPosts[index + 1].node
-      const next = index === 0 ? null : blogPosts[index - 1].node
+    projectPosts.forEach((post, index) => {
+      const previous = index === projectPosts.length - 1 ? null : projectPosts[index + 1].node
+      const next = index === 0 ? null : projectPosts[index - 1].node
 
       createPage({
-        path: '/blog'+post.node.fields.slug,
-        component: blogPost,
+        path: '/project'+post.node.fields.slug,
+        component: projectPost,
         context: {
           slug: post.node.fields.slug,
           previous,
@@ -68,13 +68,13 @@ exports.createPages = ({ graphql, actions }) => {
       })
     })
 
-    stackPosts.forEach((post, index) => {
-      const previous = index === stackPosts.length - 1 ? null : stackPosts[index + 1].node
-      const next = index === 0 ? null : stackPosts[index - 1].node
+    snippetPosts.forEach((post, index) => {
+      const previous = index === snippetPosts.length - 1 ? null : snippetPosts[index + 1].node
+      const next = index === 0 ? null : snippetPosts[index - 1].node
 
       createPage({
-        path: '/stack'+post.node.fields.slug,
-        component: blogPost,
+        path: '/snippet'+post.node.fields.slug,
+        component: projectPost,
         context: {
           slug: post.node.fields.slug,
           previous,

@@ -6,6 +6,7 @@ import Image from "gatsby-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
+import "../styles/contact.css"
 
 class Contact extends React.Component {
   render() {
@@ -50,10 +51,9 @@ class Contact extends React.Component {
               </div>
             </div>
             <div style={{
-                padding:  rhythm(2.5),
-                marginLeft: rhythm(2.5),
-              }}>
-              <form style={{
+              marginLeft: rhythm(10),
+            }}>
+              {/* <form style={{
                 display: 'flex',
                 flexDirection: 'column',
                 justifyContent: 'flex-start',
@@ -106,7 +106,28 @@ class Contact extends React.Component {
                     paddingBottom: rhythm(1),
                   }}
                   type="submit" value="Send" />
-              </form>
+              </form> */}
+
+<form target="_blank" action="https://formspree.io/uzmezfurkan@gmail.com" method="POST">
+
+<div class="formgroup" id="name-form">
+    <label for="name">Your name*</label>
+    <input type="text" id="name" name="name" />
+</div>
+
+<div class="formgroup" id="email-form">
+    <label for="email">Your e-mail*</label>
+    <input type="email" id="email" name="email" />
+</div>
+
+<div class="formgroup" id="message-form">
+    <label for="message">Your message</label>
+    <textarea id="message" name="message"></textarea>
+</div>
+
+	<input type="submit" value="Send your message!" />
+</form>
+
             </div>
           </div>
         }
