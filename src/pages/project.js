@@ -25,19 +25,35 @@ class BlogIndex extends React.Component {
     const { data } = this.props
     const siteTitle = data.site.siteMetadata.title
     const posts = data.allMarkdownRemark.edges
-    const subjects = []
+    const subjects = [] 
+    var subjectCounter  = []
+    var dict = {};
+    var i =  0 ;
     posts.map(({ node }) => {
       return (
         node.frontmatter.subjects == null ? null : node.frontmatter.subjects.map((subject) => {
-          if (subjects.includes(subject)) {
+          if (subjects.includes(subject)) { 
+            dict[subject] = Number(dict[subject]) + 1 ;
             return;
           } else {
             subjects.push(subject)
-          }
+            dict[subject] = 1 ;
+          } 
+         
         })
+          
       )
-    })
-
+    }) 
+    { 
+       var value = 0 ;
+       console.log(dict) 
+       for(var key in dict) {
+       value =  value + Number(dict[key]);
+      
+        // do something with "key" and "value" variables
+      }
+         
+       }
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO
@@ -46,14 +62,18 @@ class BlogIndex extends React.Component {
         />
         {/* <Bio /> */}
         <h3>Projects</h3>
-        <hr></hr>
+        <hr></hr> 
+        
+         
+         
+         
         <div class="btns">
           {console.log(subjects)}
           <button data-menu="all"
             className={`button ${this.state.activeButton == "All" ? 'active-color' : ''}`}
             id={"All"}
             onClick={this.handleActiveButton("All")}
-          >All</button>
+          > { "All" + " "  + " ( " + posts.length + " ) " } </button>
           {subjects.map((subject) => {
             console.log(subject)
             return (
@@ -61,7 +81,7 @@ class BlogIndex extends React.Component {
                 className={`button ${this.state.activeButton == subject ? 'active-color' : ''}`}
                 id={subject}
                 onClick={this.handleActiveButton(subject)}
-              >{subject}</button>
+              >{subject + " "  + " ( "  +dict[subject] + " ) "}</button>
             )
           })}
         </div>

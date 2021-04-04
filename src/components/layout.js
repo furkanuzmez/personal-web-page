@@ -38,7 +38,7 @@ class Layout extends React.Component {
             <Link
               to={`/resume`}
             >
-              {"Resume"}
+              {"Memories"}
             </Link>
           </li>
           <li className="NavLi">

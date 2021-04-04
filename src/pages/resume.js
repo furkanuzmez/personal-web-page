@@ -27,21 +27,16 @@ class Resume extends React.Component {
         <div class="timeline">
         <div class="container right">
             <div class="content">
-              <h2 class ="year">(Now) // Free</h2>
+              <h2 class ="year">(Now)//Free</h2>
               <hr/>
-              <p>Trying to be a blogger and looking for part-time job or freelance jobs.</p>
+              <p>job suche </p>
             </div>
           </div>
           <div class="container left">
             <div class="content">
               <h2 class ="year">(2017 - Nov / 2018 - Dec) // Mobile Developer in Basestech R&D Co.</h2>
               <hr/>
-              <p>I entered the job as a part-time working student here
-                 and I started to develop mobile application
-                by using Xamarin Framework. I work on Xamarin development 3-4 months.
-                  After then, in a new project I developed a new mobile app using React-Native. 
-                Although I focused more on mobile application development,
-                 I also gained experience in web application development.
+              <p>
               </p>
               <img 
                 src = {basestechImage}
@@ -52,14 +47,10 @@ class Resume extends React.Component {
           </div>
           <div class="container right">
             <div class="content">
-              <h2 class ="year">(2016 - 2017) // Team Leader in ITUNOM UAV Team</h2>
+              <h2 class ="year">(2016 - 2017) SUAS </h2>
               <hr/>
 
-              <p>In this year, I was chosen as team leader of ITUNOM Team. We developed a new octocopter
-                with a completely different mechanical design. I was responsiple from the team and budget management.
-                I also work on image processing task with one of my friend in the team.
-                We joined to the AUVSI SUAS 2017 Competition and we were 4th in overall ranking and 2th in mission
-                ranking. 
+              <p> 
                 <a href="http://www.auvsi-suas.org/competitions/2017/" target="_blank">You can continue the
                  competition page of this year and check our journal from this link.</a>
               </p>

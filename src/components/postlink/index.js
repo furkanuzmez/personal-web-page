@@ -18,9 +18,9 @@ const Postlink = ({ node, linkTo }) => {
   return (
     <div class="card-grid-space">
     <Link class="card" to={linkTo + node.fields.slug}>
-      <div>
-        <h1>{title}</h1>
-        <p>{node.frontmatter.description.substring(0,125) || node.excerpt.substring(0,125)}...</p>
+      <div class="date">
+        <h2>{title}</h2>
+        <p>{node.frontmatter.description.substring(0,350) || node.excerpt.substring(0,350)}...</p>
         <div class="date">{node.frontmatter.date}</div>
         <div class="tags">
                {node.frontmatter.subjects == null ? null : node.frontmatter.subjects.map((subject) => {

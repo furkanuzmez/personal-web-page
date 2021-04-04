@@ -6,6 +6,7 @@ import Layout from "../../components/layout"
 import SEO from "../../components/seo"
 import { rhythm, scale } from "../../utils/typography"
 import highlightCode from '../../utils/highlightCode'
+import SkillCircle from  "../../components/skillCircle"
 
 
 class BlogPostTemplate extends React.Component {
@@ -18,8 +19,9 @@ class BlogPostTemplate extends React.Component {
     const post = this.props.data.markdownRemark
     const siteTitle = this.props.data.site.siteMetadata.title
     const { previous, next } = this.props.pageContext
+
     let precedingPath
-    this.props.location.pathname.includes("blog") ? precedingPath = "/blog" : precedingPath = "/stack"
+    this.props.location.pathname.includes("blog") ? precedingPath = "/project" : precedingPath = "/project"
 
     console.log(post.html);
 
@@ -27,10 +29,17 @@ class BlogPostTemplate extends React.Component {
 
       <Layout location={this.props.location} title={siteTitle}>
         <SEO
-          title={post.frontmatter.title}
+          title={post.frontmatter.title} 
+
           description={post.frontmatter.description || post.excerpt}
-        />
+        /> 
+
+           { 
+                 post.frontmatter.title == `liste` ? 
+                 <h1> Furkan </h1> :  <h2> Component </h2> 
+           } 
         <div class="blog-post">
+          
           <h1>{post.frontmatter.title}</h1>
           <p
             style={{

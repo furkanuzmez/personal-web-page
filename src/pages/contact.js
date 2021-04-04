@@ -108,7 +108,7 @@ class Contact extends React.Component {
                   type="submit" value="Send" />
               </form> */}
 
-<form target="_blank" action="https://formspree.io/uzmezfurkan@gmail.com" method="POST">
+<form target="_blank" action="https://formspree.io/f/xrgrgbza" method="POST">
 
 <div class="formgroup" id="name-form">
     <label for="name">Your name*</label>

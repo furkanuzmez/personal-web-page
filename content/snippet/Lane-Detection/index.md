@@ -1,6 +1,6 @@
 ---
-title: How Brain Works and What is EEG?
-date: "2019-08-23T17:50:05+0000"
+title: Lane Detection
+date: "2021-08-23T17:50:05+0000"
 description: In this post, I want to explain the basics of brain and eeg.
 ---
 
