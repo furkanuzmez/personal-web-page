@@ -6,16 +6,9 @@ subjects: ["redux","javascript","react","gatsby"]
 ---
 
 
-Hi Everyone, 
-
-##
+Hi Everyone
 
 
-
-
-
-
- 💪
 
 
 

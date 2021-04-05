@@ -13,12 +13,7 @@ Hi Everyone,
 
 ![Starting a Blog](./imgmstr.jpg)
 
- ```python
- a, b = 0, 1
-while b < 10:
-    print(b)
-    a, b = a, a + b
-  ```
+ 
 
 
 ##Sliding Window
@@ -28,7 +23,7 @@ while b < 10:
 
 
 
- 💪
+ 
 
 
 

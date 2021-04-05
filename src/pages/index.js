@@ -8,25 +8,38 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
 
-class BlogIndex extends React.Component {
+class BlogIndex extends React.Component { 
+ 
+
+
+   componentDidMount() { 
+    document.addEventListener('mousemove', e => this.parallax(e));
+
+   }
+
+   parallax = (e) => {
+    document.querySelectorAll('.layer').forEach(layer => {
+      const speed = layer.getAttribute('data-speed');
+
+      const x = (window.innerWidth - e.pageX * speed) / 100;
+      const y = (window.innerHeight - e.pageY * speed) / 100;
+
+      layer.style.transform = `translate(${x}px, ${y}px)`;
+    });
+  }
+
+
+
   render() {
     const { data } = this.props
     const siteTitle = data.site.siteMetadata.title
     const posts = data.allMarkdownRemark.edges
 
     console.log(posts);
-    document.addEventListener('mousemove', e => parallax(e));
 
-    const parallax = (e) => {
-      document.querySelectorAll('.layer').forEach(layer => {
-        const speed = layer.getAttribute('data-speed');
+    
 
-        const x = (window.innerWidth - e.pageX * speed) / 100;
-        const y = (window.innerHeight - e.pageY * speed) / 100;
-
-        layer.style.transform = `translate(${x}px, ${y}px)`;
-      });
-    }
+    
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
