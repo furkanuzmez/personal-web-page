@@ -1,15 +1,18 @@
 ---
-title: E-Commerce Web App Django 
+title: E-commerce Web App
 date: "2019-04-19T21:28:03+00:00"
-description: "Django Authentication , React and Redux Practice , store , reducer etc ..."
-subjects: ["redux","javascript","react","gatsby"]
+description: "Django Authentication and Backend,React "
+subjects: ["info","javascript","react","mdx"]
 ---
 
 
-Hi Everyone
+Hi Everyone 
 
+##E-Commerce
 
+  
 
+   
 
 
 
