@@ -17,17 +17,21 @@ class Contact extends React.Component {
       <Layout location={this.props.location} title={siteTitle}>
         <SEO
           title="Contact"
-          keywords={[`gmail`, `mutluhan`, `üzmez`, `email`]}
+          keywords={[`gmail`, `furkan`, `üzmez`, `contact`, `iletişim`, `frankfurt`, `email`]}
         />
         {
           <div style={{
             display: `flex`,
-            marginBottom: rhythm(2.5),
+            flexWrap: 'wrap',
+            flexDirection: 'column',
+            justifyContent: "space-around",
+            alignItems: "center"
           }}>
             <div>
               <div style={{
                 display: `flex`,
-                marginBottom: rhythm(2.5),
+                justifyContent:'center',
+                alignItems:"center"
               }}
               >
                 <Image
@@ -43,90 +47,41 @@ class Contact extends React.Component {
                     borderRadius: `50%`,
                   }}
                 />
-                <h1>Furkan ÜZMEZ</h1>
+                <h1
+                  style={{
+                    marginLeft: rhythm(1 / 2),
+                    marginTop: 0,
+                    marginBottom: 0,
+                    minWidth: 100,
+                    borderRadius: `100%`,
+                  }}
+                >Furkan ÜZMEZ</h1>
               </div>
               <div>
                 <h3>uzmezfurkan@gmail.com</h3>
-                <p>You can send an email to me by form at the right!</p>
+                <p>You can send an email to me by form at the below!</p>
               </div>
             </div>
-            <div style={{
-              marginLeft: rhythm(10),
-            }}>
-              {/* <form style={{
-                display: 'flex',
-                flexDirection: 'column',
-                justifyContent: 'flex-start',
-                alignItems: 'flex-start',
-                marginBottom: rhythm(2.5),
-              }} action="https://formspree.io/uzmezfurkan@gmail.com" method="POST">
-                <input style={{
-                  height: rhythm(1),
-                  marginBottom: rhythm(1 / 8),
-                  width: rhythm(20),
-                  opacity: 0.5,
-                  color: "black",
-                  paddingLeft: rhythm(1 / 8),
-                }}
-                  placeholder="Name"
-                  type="text"
-                  name="name" />
-                <input style={{
-                  height: rhythm(1),
-                  marginBottom: rhythm(1 / 8),
-                  width: rhythm(20),
-                  opacity: 0.5,
-                  color: "black",
-                  paddingLeft: rhythm(1 / 8),
-                }}
-                  placeholder="Your Email"
-                  type="email"
-                  name="_replyto"
-                />
-                <textarea
-                  style={{
-                    height: rhythm(5),
-                    marginBottom: rhythm(1 / 8),
-                    width: rhythm(20),
-                    opacity: 0.5,
-                    color: "black",
-                    paddingLeft: rhythm(1 / 8),
-                  }}
-                  name="message"
-                  placeholder="Message"></textarea>
-                <input
-                  style={{
-                    height: rhythm(1),
-                    marginBottom: rhythm(1 / 8),
-                    width: rhythm(20),
-                    opacity: 0.6,
-                    borderRadius: 5,
-                    color: "white",
-                    backgroundColor: "#111",
-                    paddingBottom: rhythm(1),
-                  }}
-                  type="submit" value="Send" />
-              </form> */}
+            <div>
+              <form target="_blank" action="https://formspree.io/f/xrgrgbza" method="POST">
 
-<form target="_blank" action="https://formspree.io/f/xrgrgbza" method="POST">
+                <div class="formgroup" id="name-form">
+                  <label for="name">Your name*</label>
+                  <input type="text" id="name" name="name" />
+                </div>
 
-<div class="formgroup" id="name-form">
-    <label for="name">Your name*</label>
-    <input type="text" id="name" name="name" />
-</div>
+                <div class="formgroup" id="email-form">
+                  <label for="email">Your e-mail*</label>
+                  <input type="email" id="email" name="email" />
+                </div>
 
-<div class="formgroup" id="email-form">
-    <label for="email">Your e-mail*</label>
-    <input type="email" id="email" name="email" />
-</div>
+                <div class="formgroup" id="message-form">
+                  <label for="message">Your message</label>
+                  <textarea id="message" name="message"></textarea>
+                </div>
 
-<div class="formgroup" id="message-form">
-    <label for="message">Your message</label>
-    <textarea id="message" name="message"></textarea>
-</div>
-
-	<input type="submit" value="Send your message!" />
-</form>
+                <input type="submit" value="Send your message!" />
+              </form>
 
             </div>
           </div>

@@ -31,6 +31,7 @@
     "react-dom": "^16.8.3",
     "react-helmet": "^5.2.0",
     "react-typography": "^0.16.18",
+    "styled-components": "^5.2.3",
     "typeface-merriweather": "0.0.54",
     "typeface-montserrat": "0.0.54",
     "typography": "^0.16.18",
@@ -59,6 +60,6 @@
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\"",
     "deploy": "npm run build && node ./scripts/github-deploy",
-    "deploy:github": "npm run build && cp ./src/CNAME public/ && node ./scripts/deploy-github"
+    "deploy:github": "npm run build && cp ./src/CNAME public/ && node ./scripts/github-deploy"
   }
 }

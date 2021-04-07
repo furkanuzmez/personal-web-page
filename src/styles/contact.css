@@ -11,6 +11,10 @@ form{
 	padding-top: 20px;
 	color: white;
 	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	
 	
 }
@@ -65,6 +69,10 @@ label{
 	padding-left: 20px;
 }
 .formgroup, .formgroup-active, .formgroup-error{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	background-repeat: no-repeat;
 	background-position: right bottom;
 	background-size: 10.5%;
@@ -72,7 +80,6 @@ label{
 	-webkit-transition: background-image 0.7s;
 	-moz-transition: background-image 0.7s;
 	-o-transition: background-image 0.7s;
-	width: 566px;
 	padding-top: 2px;
 }
 
@@ -85,4 +92,41 @@ label{
 .formgroup-error{
 	background-image: url('http://www.geertjanhendriks.nl/codepen/form/octo-error.png');
 	color: red;
+}
+
+@media screen and (max-width: 990px) {
+	label, input{
+		font-size: 1.3em;
+		padding-left: 20px;
+	}
+	input[type="submit"], input,textarea{
+		width: 500px;	
+	}
+}
+
+@media screen and (max-width: 768px) {
+	label, input{
+		font-size: 1em;
+		padding-left: 20px;
+	}
+
+	input[type="submit"], input,textarea{
+		width: 400px;	
+	}
+}
+
+@media screen and (max-width: 550px) {
+	label, input{
+		font-size: 0.8em;
+		padding-left: 20px;
+	}
+
+	form{
+		width: 300px;	
+	}
+
+	input[type="submit"], input,textarea{
+		width: 300px;	
+	}
+	
 }

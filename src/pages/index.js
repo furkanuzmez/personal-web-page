@@ -8,16 +8,16 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
 
-class BlogIndex extends React.Component { 
- 
+class BlogIndex extends React.Component {
 
 
-   componentDidMount() { 
+
+  componentDidMount() {
     document.addEventListener('mousemove', e => this.parallax(e));
 
-   }
+  }
 
-   parallax = (e) => {
+  parallax = (e) => {
     document.querySelectorAll('.layer').forEach(layer => {
       const speed = layer.getAttribute('data-speed');
 
@@ -37,18 +37,18 @@ class BlogIndex extends React.Component {
 
     console.log(posts);
 
-    
 
-    
+
+
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO
-          title="All posts"
-          keywords={[`blog`, `gatsby`, `javascript`, `react`]}
+          title="Personal Page"
+          keywords={[`blog`, `portfolio`, `personal`, `cv`, `furkan`, `üzmez`, `fraknfurt`, `software`, `developer`]}
         />
-        <div> 
-          
+        <div>
+
           <section class="entrance">
             <img src="https://firebasestorage.googleapis.com/v0/b/fire-fotos-8e3f9.appspot.com/o/img%2Ffigure-1.png?alt=media&token=6d66c61e-6180-4331-8d0c-596e3161eb26" alt="Figure" title="Figure" class="layer" data-speed="-10" />
             <img src="https://firebasestorage.googleapis.com/v0/b/fire-fotos-8e3f9.appspot.com/o/img%2Ffigure-2.png?alt=media&token=9a599a7b-9718-40ee-969d-786b52a5ea64" alt="Figure" title="Figure" class="layer" data-speed="10" />
@@ -64,14 +64,15 @@ class BlogIndex extends React.Component {
             <img src="https://firebasestorage.googleapis.com/v0/b/fire-fotos-8e3f9.appspot.com/o/img%2Ffigure-12.png?alt=media&token=a7146e98-4be8-4dad-88f8-7fb1f607c0f7" alt="Figure" title="Figure" class="layer" data-speed="10" />
             {/* <h1>Hi! I am Furkan. I am software engineer in Frankfurt.</h1>
         <h2>I hope there is something to read for you in my blog.</h2> */}
-              <div> 
-              <h3 class="layer" style={{fontSize: 2.5 + 'em'}}  data-speed="0"> 
-              Hi! This is Furkan
-	</h3>
-                <h3 class="layer" style={{fontSize: 2 + 'em'}}  data-speed="0"> 
-              Software Developer and Creative Technologist
-	</h3> </div>
-            
+            <div>
+              <h3 class="layer" style={{ fontSize: 2.5 + 'em' }} data-speed="0">
+                Hi! This is Furkan
+	            </h3>
+              <h3 class="layer" style={{ fontSize: 2 + 'em' }} data-speed="0">
+                Software Developer and Creative Technologist
+	            </h3>
+            </div>
+
           </section>
 
         </div>
@@ -84,14 +85,12 @@ class BlogIndex extends React.Component {
           <SkillCircle percentage="90" subject="Javascript" />
           <SkillCircle percentage="90" subject="HTML" />
           <SkillCircle percentage="80" subject="CSS" />
-        </div>
-        <div class="okvir">
-          <SkillCircle percentage="50" subject="React"/>
-          <SkillCircle percentage="50" subject="Django"/>
-          <SkillCircle percentage="70" subject="React"/>
-          <SkillCircle percentage="60" subject="Java"/>
-          <SkillCircle percentage="65" subject="Python"/>
-          <SkillCircle percentage="65" subject="Python"/>
+          <SkillCircle percentage="50" subject="React" />
+          <SkillCircle percentage="50" subject="Django" />
+          <SkillCircle percentage="70" subject="React" />
+          <SkillCircle percentage="60" subject="Java" />
+          <SkillCircle percentage="65" subject="Python" />
+          <SkillCircle percentage="65" subject="Python" />
         </div>
 
         <h3>Posts</h3>
@@ -107,7 +106,7 @@ class BlogIndex extends React.Component {
           })}
         </section>
 
-       
+
       </Layout>
     )
   }

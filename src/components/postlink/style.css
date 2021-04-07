@@ -89,6 +89,24 @@ a {
   text-decoration: none;
 }
 
+@media screen and (max-width: 990px) {
+	.card {
+    height: 17em;
+	}	
+}
+
+@media screen and (max-width: 768px) {
+	.card {
+    height: 14em;
+	}	
+}
+
+@media screen and (max-width: 550px) {
+	.card {
+    height: 9em;
+	}	
+}
+
 .card:hover {
   transform: rotate(0);
 }
@@ -114,7 +132,7 @@ a {
 }
 
 .card .tags .tag {
-  font-size: 0.75em;
+  font-size: 0.6em;
   background: rgba(255,255,255,0.5);
   border-radius: 0.3rem;
   padding: 0 0.5em;
@@ -199,6 +217,28 @@ a {
   .cards-wrapper {
     grid-template-columns: 1fr 1fr;
   }
+
+  .card p {
+    font-size: 0.75em;
+    margin-top: 0.5em;
+    line-height: 2em;
+    margin: 0;
+    padding-right: 0.5em;
+  }
+  
+  .card .tags {
+    display: flex;
+  }
+  
+  .card .tags .tag {
+    font-size: 0.6em;
+    background: rgba(255,255,255,0.5);
+    border-radius: 0.3rem;
+    padding: 0 0.5em;
+    margin-right: 0.5em;
+    line-height: 1.5em;
+    transition: all, var(--transition-time);
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -208,6 +248,28 @@ a {
   .info {
     justify-content: center;
   }
+
+  .card p {
+    font-size: 0.65em;
+    margin-top: 0.5em;
+    line-height: 2em;
+    margin: 0;
+    padding-right: 0.5em;
+  }
+  
+  .card .tags {
+    display: flex;
+  }
+  
+  .card .tags .tag {
+    font-size: 0.6em;
+    background: rgba(255,255,255,0.5);
+    border-radius: 0.3rem;
+    padding: 0 0.5em;
+    margin-right: 0.5em;
+    line-height: 1.5em;
+    transition: all, var(--transition-time);
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -216,6 +278,28 @@ a {
   }
   .card {
     max-width: calc(100vw - 4rem);
+  }
+
+  .card p {
+    font-size: 0.6em;
+    margin-top: 0.5em;
+    line-height: 2em;
+    margin: 0;
+    padding-right: 0.5em;
+  }
+  
+  .card .tags {
+    display: flex;
+  }
+  
+  .card .tags .tag {
+    font-size: 0.6em;
+    background: rgba(255,255,255,0.5);
+    border-radius: 0.3rem;
+    padding: 0 0.5em;
+    margin-right: 0.5em;
+    line-height: 1.5em;
+    transition: all, var(--transition-time);
   }
 }
 
@@ -227,4 +311,26 @@ a {
   .info h1 {
     margin: 0;
   }
+
+  .card p {
+  font-size: 0.6em;
+  margin-top: 0.5em;
+  line-height: 2em;
+  margin: 0;
+  padding-right: 0.5em;
+}
+
+.card .tags {
+  display: flex;
+}
+
+.card .tags .tag {
+  font-size: 0.6em;
+  background: rgba(255,255,255,0.5);
+  border-radius: 0.3rem;
+  padding: 0 0.5em;
+  margin-right: 0.5em;
+  line-height: 1.5em;
+  transition: all, var(--transition-time);
+}
 }

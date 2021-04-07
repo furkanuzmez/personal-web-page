@@ -1,7 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css?family=Heebo:400,700|Open+Sans:400,700');
 
-
 body {
 	font-family: "Montserrat";
 	width:100% !important;
@@ -110,10 +109,9 @@ button{
 .TitleStyle {
 	display: inline-block;
 	box-shadow: none;
-	font-size:xx-large;
+	font-size:x-large;
 	text-decoration: none;
 	color: white;
-	padding-left: 60px;
   }
 
   * {
@@ -126,9 +124,6 @@ button{
 	outline: 0;
   }
   
-  html {
-	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  }
   
   
   .entrance {
@@ -158,19 +153,19 @@ button{
   }
   
   @media screen and (max-width: 990px) {
-	  section h3 {
+	  section h3 h2 {
 		  font-size: 4rem;
 	  }
   }
   
   @media screen and (max-width: 768px) {
-	  section h3 {
+	  section h3 h2 {
 		  font-size: 3rem;
 	  }
   }
   
   @media screen and (max-width: 550px) {
-	  section h3 {
+	  section h3 h2 {
 		  font-size: 2rem;
 	  }
   }
@@ -182,30 +177,32 @@ button{
 
 
   .cards-wrapper {
-	display: grid;
-	justify-content: center;
-	align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-gap: 4rem;
-	padding: 4rem;
+	padding: 2rem;
 	margin: 0 auto;
-	width: max-content;
+	width: 100%;
   }
 
   .okvir{
 	display: flex;
-    justify-content: space-around;
-    align-items: center;
+	flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
     background: #212121;
     overflow: hidden;
-    z-index: -100;
+    /* z-index: -100; */
 }
 
 .okvir .skill{
     position: relative;
     display: flex;
-    width: 250px;
-    height: 300px;
+    width: 200px;
+    height: 250px;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -221,6 +218,8 @@ button{
     -moz-transition: 0.5s;
     -ms-transition: 0.5s;
     -o-transition: 0.5s;
+
+
 }
 
 .okvir .skill:hover{
@@ -241,5 +240,46 @@ button{
     left: -62.5px;
     background: #212121;
     pointer-events: none;
-    z-index: 1;
+    /* z-index: 1; */
+}
+
+@media screen and (max-width: 990px) {
+	section h1,h2 {
+		font-size: 2rem;
+	}
+	h3, h4, h5, p {
+		font-size: 1rem;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	section h1,h2{
+		font-size: 2rem;
+	}
+	h3, h4, h5, p {
+		font-size: 1rem;
+	}
+	.okvir .skill{
+		width: 190px;
+		height: 250px;
+
+
+	}
+}
+
+@media screen and (max-width: 550px) {
+	section h1,h2 {
+		font-size: 1.2rem;
+	}
+	h3, h4, h5, p {
+		font-size: 0.8rem;
+	}
+
+	.okvir .skill{
+		width: 160px;
+		height: 250px;
+
+
+	}
+	
 }
