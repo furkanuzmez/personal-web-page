@@ -12,11 +12,11 @@ const SideNav = styled.div`
   left: 0;
   background-color: #212121;
   overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 8px;
+  transition:0.5s;
+  padding-top:8px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction:column;
+  align-items:center;
 `;
 
 const MobileLink = styled.span`

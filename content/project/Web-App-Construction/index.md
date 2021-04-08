@@ -1,14 +1,18 @@
 ---
-title: Contruction Info Sharing 
+title: Construction Info Sharing 
 date: "2019-04-19T21:28:03+00:00"
-description: "Django Authentication , React and Redux Practice , store , reducer etc ..."
-subjects: ["redux","javascript","react","gatsby"]
+description: ".Net Core,Angular,Mouse Events,Project Management,Collobration"
+subjects: ["angular","javascript","ASP.net"]
 ---
 
 
-Hi Everyone, 
+###Cospotter.com - ?? Start-UP ??
 
-##E-Commerce Django and React.js
+- Angular 
+- ASP.net 
+- Canvas 
+
+<iframe width="1380" height="496" src="https://www.youtube.com/embed/1kdWYnPjRTo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 

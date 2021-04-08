@@ -1,7 +1,5 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
-
-
 import PostLink from '../components/postlink/index'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -9,7 +7,6 @@ import { rhythm } from "../utils/typography"
 import "../styles/resume.css"
 import itunomImage from "../../content/assets/itunom.jpg"
 import basestechImage from "../../content/assets/basestech.png"
-
 import teamphoto from "../../content/assets/teamphoto.jpeg"
 import uavmq8 from "../../content/assets/uavmq8.jpg"
 

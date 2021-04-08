@@ -36,7 +36,7 @@ class BlogPostTemplate extends React.Component {
 
            { 
                  post.frontmatter.title == `liste` ? 
-                 <h1> Furkan </h1> :  <h2> Component </h2> 
+                 <h1> Furkan </h1> :  <h2>  </h2> 
            } 
         <div class="blog-post">
           

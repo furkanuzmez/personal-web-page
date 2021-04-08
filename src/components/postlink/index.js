@@ -18,7 +18,10 @@ const Postlink = ({ node, linkTo }) => {
   return (
     <div class="card-grid-space">
     <Link class="card" to={linkTo + node.fields.slug}>
-      <div>
+      <div style={{
+                position:"absolute",
+                top: 0,
+              }}>
         <h2>{title}</h2>
         <p>{node.frontmatter.description.substring(0,350) || node.excerpt.substring(0,350)}...</p>
         <div class="date">{node.frontmatter.date}</div>
