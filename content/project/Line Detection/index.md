@@ -2,7 +2,7 @@
 title: Line Detection with Open-CV 
 date: "2019-04-19T21:28:03+00:00"
 description: "Open-CV , Image Processing"
-subjects: ["Open-CV,"Python","Computer Vision"]
+subjects: ["Open-CV","Python","Computer Vision"]
 ---
 
 
