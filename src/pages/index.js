@@ -79,15 +79,20 @@ class BlogIndex extends React.Component {
         <h3>Skills</h3>
         <hr></hr>
         <div class="okvir">
-          <SkillCircle percentage="68" subject="Python" />
-          <SkillCircle percentage="63" subject="Java" />
+
+          <SkillCircle percentage="70" subject="Python"/>
+          <SkillCircle percentage="60" subject="Java"/>
+          <SkillCircle percentage="75" subject="C#"/>
           <SkillCircle percentage="90" subject="Embedded-C" />
           <SkillCircle percentage="90" subject="Javascript" />
           <SkillCircle percentage="90" subject="HTML" />
+
           <SkillCircle percentage="80" subject="CSS" />
-          <SkillCircle percentage="50" subject="React" />
-          <SkillCircle percentage="60" subject="Django" />
-         
+          <SkillCircle percentage="70" subject="React"/>
+          <SkillCircle percentage="60" subject="Django"/>
+          <SkillCircle percentage="80" subject="Linux"/>
+          <SkillCircle percentage="80" subject="SQL"/>
+          <SkillCircle percentage="80" subject="Open-CV"/>
           
           
         </div>

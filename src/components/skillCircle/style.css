@@ -119,63 +119,63 @@ svg circle:nth-child(2){
 }    
 
 .skill:nth-child(1) svg circle:nth-child(2){
-    stroke-dashoffset: calc(440 - (400 * 90) / 100);
+    stroke-dashoffset: calc(440 - (400 * 70) / 100);
     stroke: #00a1ff;
     animation: progress 1s ease-out forwards;
     -webkit-animation: progress 3s ease-out forwards;
 }
 
 .skill:nth-child(2) svg circle:nth-child(2){
-    stroke-dashoffset: calc(440 - (400 * 90) / 100);
+    stroke-dashoffset: calc(440 - (400 * 60) / 100);
     stroke: #00a1ff;
     animation: progress 1s ease-out forwards;
     -webkit-animation: progress 2s ease-out forwards;
 }
 
 .skill:nth-child(3) svg circle:nth-child(2){
-    stroke-dashoffset: calc(440 - (400 * 90) / 100);
+    stroke-dashoffset: calc(440 - (400 * 75) / 100);
     stroke: #00a1ff;
     animation: progress 1s ease-out forwards;
     -webkit-animation: progress 5s ease-out forwards;
 }
 
 .skill:nth-child(4) svg circle:nth-child(2){
-    stroke-dashoffset: calc(440 - (400 * 80) / 100);
+    stroke-dashoffset: calc(440 - (400 * 90) / 100);
     stroke: #00a1ff;
     animation: progress 1s ease-out forwards;
     -webkit-animation: progress 3s ease-out forwards;
 }
 
 .skill:nth-child(5) svg circle:nth-child(2){
-    stroke-dashoffset: calc(440 - (400 * 60) / 100);
+    stroke-dashoffset: calc(440 - (400 * 90) / 100);
     stroke: #00a1ff;
     animation: progress 1s ease-out forwards;
     -webkit-animation: progress 2s ease-out forwards;
 }
 
 .skill:nth-child(6) svg circle:nth-child(2){
-    stroke-dashoffset: calc(440 - (400 * 60) / 100);
+    stroke-dashoffset: calc(440 - (400 * 90) / 100);
     stroke: #00a1ff;
     animation: progress 1s ease-out forwards;
     -webkit-animation: progress 5s ease-out forwards;
 }
 
 .skill:nth-child(7) svg circle:nth-child(2){
-    stroke-dashoffset: calc(440 - (400 * 90) / 100);
+    stroke-dashoffset: calc(440 - (400 * 80) / 100);
     stroke: #00a1ff;
     animation: progress 1s ease-out forwards;
     -webkit-animation: progress 3s ease-out forwards;
 }
 
 .skill:nth-child(8) svg circle:nth-child(2){
-    stroke-dashoffset: calc(440 - (400 * 90) / 100);
+    stroke-dashoffset: calc(440 - (400 * 70) / 100);
     stroke: #00a1ff;
     animation: progress 1s ease-out forwards;
     -webkit-animation: progress 2s ease-out forwards;
 }
 
 .skill:nth-child(9) svg circle:nth-child(2){
-    stroke-dashoffset: calc(440 - (400 * 90) / 100);
+    stroke-dashoffset: calc(440 - (400 * 60) / 100);
     stroke: #00a1ff;
     animation: progress 1s ease-out forwards;
     -webkit-animation: progress 5s ease-out forwards;
@@ -189,14 +189,14 @@ svg circle:nth-child(2){
 }
 
 .skill:nth-child(11) svg circle:nth-child(2){
-    stroke-dashoffset: calc(440 - (400 * 60) / 100);
+    stroke-dashoffset: calc(440 - (400 * 80) / 100);
     stroke: #00a1ff;
     animation: progress 1s ease-out forwards;
     -webkit-animation: progress 2s ease-out forwards;
 }
 
 .skill:nth-child(12) svg circle:nth-child(2){
-    stroke-dashoffset: calc(440 - (400 * 60) / 100);
+    stroke-dashoffset: calc(440 - (400 * 80) / 100);
     stroke: #00a1ff;
     animation: progress 1s ease-out forwards;
     -webkit-animation: progress 5s ease-out forwards;
