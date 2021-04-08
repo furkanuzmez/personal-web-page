@@ -1,6 +1,6 @@
 ---
 title: Vehicle Competitor - Database Practice 
-date: "2019-04-19T21:28:03+00:00"
+date: "2020-06-10T21:28:03+00:00"
 description: "MySql, Sql Connection , SQL Queries , Dom Manipulation , Axios , Get, Post , Dynamic Element Creates..."
 subjects: ["SQL","javascript","Axios","MySQL"]
 ---

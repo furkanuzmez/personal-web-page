@@ -1,8 +1,8 @@
 ---
 title: Canvas- Animation
-date: "2019-04-19T21:28:03+00:00"
+date: "2017-07-19T21:28:03+00:00"
 description: "Canvas , 2D-Game , Timers , Drawing Fuctions ..."
-subjects: ["redux","javascript","react","Canvas"]
+subjects: ["animation","javascript","react","Canvas"]
 ---
 
 

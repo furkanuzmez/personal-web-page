@@ -1,6 +1,6 @@
 ---
 title: Construction Info Sharing 
-date: "2019-04-19T21:28:03+00:00"
+date: "2017-04-19T21:28:03+00:00"
 description: ".Net Core,Angular,Mouse Events,Project Management,Collobration"
 subjects: ["angular","javascript","ASP.net"]
 ---
