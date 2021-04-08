@@ -1,8 +1,8 @@
 ---
-title: Object Detection with Open-CV and Tensor-Flow 
-date: "2019-04-19T21:28:03+00:00"
+title: Object Detection with Open-CV and Tensor-Flow
+date: "2020-02-12T21:28:03+00:00"
 description: "Open-CV , Tensor Flow , Dataset , Training , Convolution"
-subjects: ["redux","javascript","react","gatsby"]
+subjects: ["Open-CV","Machine Learning","AI",]
 ---
 
 
